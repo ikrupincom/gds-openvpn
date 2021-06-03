@@ -18,7 +18,7 @@ fi
 if [[ $1 == "init" ]]; then
     I_DIR=/input
     cp ${I_DIR}/base-client.conf ${CLIENTS_DIR}/
-    cp ${I_DIR}/{server.conf,server.key,server.crt,ca.crt,ta.key} ${OPENVPN_DIR}/server/ 
+    cp ${I_DIR}/{server.conf,server.key,server.crt,ca.crt,ta.key,crl.pem} ${OPENVPN_DIR}/server/ 
 fi
 
 if [[ $1 == "client" ]]; then
